@@ -5,4 +5,4 @@ Contact guidelines
 - Send emails in plain text with no attachments or links.
 - Refrain from topics outside of computer science research and development.
 
-jadidbourbaki <at> gmail <dot> com
+Email address: jadidbourbaki on the email service owned by the PageRank folks. 
