@@ -91,3 +91,13 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
 {% endhighlight %}
 
 </details>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4F6FRWCSL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4F6FRWCSL');
+</script>
