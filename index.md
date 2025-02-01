@@ -16,7 +16,7 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
 <details>
 <summary>BibTex Citation</summary>
 
-```bibtex
+{% highlight bibtex %}
 @misc{tirmazi2025privacymodelclassical,
       title={A Privacy Model for Classical & Learned Bloom Filters}, 
       author={Hayder Tirmazi},
@@ -26,17 +26,18 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       primaryClass={cs.CR},
       url={https://arxiv.org/abs/2501.15751}, 
 }
-```
+{% endhighlight %}
 
 </details>
 
+<br/>
 
 **An Introduction to Protein Cryptography** &mdash; [preprint](https://eprint.iacr.org/2025/089) <br/>
 *Hayder Tirmazi, Tien Phuoc Tran*
 <details>
 <summary>BibTex Citation</summary>
       
-```bibtex
+{% highlight bibtex %}
 @misc{cryptoeprint:2025/089,
       author = {Hayder Tirmazi and Tien Phuoc Tran},
       title = {An Introduction to Protein Cryptography},
@@ -44,17 +45,17 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       year = {2025},
       url = {https://eprint.iacr.org/2025/089}
 }
-```
-
+{% endhighlight %}
 </details>
 
+<br/>
 
 **Computational Complexity of Game Boy Games** &mdash; [preprint](https://arxiv.org/abs/2412.15469) <br/>
 *Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran*
 <details>
 <summary>BibTex Citation</summary>
       
-```bibtex
+{% highlight bibtex %}
 @misc{tirmazi2024computationalcomplexitygameboy,
       title={Computational Complexity of Game Boy Games}, 
       author={Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran},
@@ -64,17 +65,18 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       primaryClass={cs.CC},
       url={https://arxiv.org/abs/2412.15469}, 
 }
-```
+{% endhighlight %}
 
 </details>
 
+<br/>
 
 **Adversary Resilient Learned Bloom Filters** &mdash; [preprint](https://arxiv.org/abs/2409.06556) <br/>
 *Allison Bishop, Hayder Tirmazi*
 <details>
 <summary>BibTex Citation</summary>
 
-```bibtex
+{% highlight bibtex %}
 @misc{bishop2025adversaryresilientlearnedbloom,
       title={Adversary Resilient Learned Bloom Filters}, 
       author={Allison Bishop and Hayder Tirmazi},
@@ -84,7 +86,7 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       primaryClass={cs.CR},
       url={https://arxiv.org/abs/2409.06556}, 
 }
-```
+{% endhighlight %}
 
 </details>
 
