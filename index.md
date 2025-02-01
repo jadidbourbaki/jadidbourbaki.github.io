@@ -1,13 +1,81 @@
-# About
+---
+layout: default
+theme: minima
+---
 
-Jadid Bourbaki works on problems.
+# Research
 
-# Contact 
+**A Privacy Model for Classical & Learned Bloom Filters** &mdash; [preprint](https://arxiv.org/abs/2501.15751) <br/>
+*Hayder Tirmazi*
+<details>
+<summary>BibTex Citation</summary>
 
-Guidelines
+```bibtex
+@misc{tirmazi2025privacymodelclassical,
+      title={A Privacy Model for Classical & Learned Bloom Filters}, 
+      author={Hayder Tirmazi},
+      year={2025},
+      eprint={2501.15751},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2501.15751}, 
+}
+```
+</details>
 
-- Communicate via email only. 
-- Send emails in plain text with no attachments or links.
-- Refrain from topics outside of computer science research and development.
+**An Introduction to Protein Cryptography** &mdash; [preprint](https://eprint.iacr.org/2025/089) <br/>
+*Hayder Tirmazi, Tien Phuoc Tran*
+<details>
+<summary>BibTex Citation</summary>
+  
+```bibtex
+@misc{cryptoeprint:2025/089,
+      author = {Hayder Tirmazi and Tien Phuoc Tran},
+      title = {An Introduction to Protein Cryptography},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2025/089},
+      year = {2025},
+      url = {https://eprint.iacr.org/2025/089}
+}
+```
+</details>
 
-Email address: jadidbourbaki at gmail dot com
+
+**Computational Complexity of Game Boy Games** &mdash; [preprint](https://arxiv.org/abs/2412.15469) <br/>
+*Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran*
+<details>
+<summary>BibTex Citation</summary>
+  
+```bibtex
+@misc{tirmazi2024computationalcomplexitygameboy,
+      title={Computational Complexity of Game Boy Games}, 
+      author={Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran},
+      year={2024},
+      eprint={2412.15469},
+      archivePrefix={arXiv},
+      primaryClass={cs.CC},
+      url={https://arxiv.org/abs/2412.15469}, 
+}
+```
+</details>
+
+**Adversary Resilient Learned Bloom Filters** &mdash; [preprint](https://arxiv.org/abs/2409.06556) <br/>
+*Allison Bishop, Hayder Tirmazi*
+<details>
+<summary>BibTex Citation</summary>
+
+```bibtex
+@misc{bishop2025adversaryresilientlearnedbloom,
+      title={Adversary Resilient Learned Bloom Filters}, 
+      author={Allison Bishop and Hayder Tirmazi},
+      year={2025},
+      eprint={2409.06556},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2409.06556}, 
+}
+```
+</details>
+
+
+
+
