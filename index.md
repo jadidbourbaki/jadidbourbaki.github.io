@@ -106,7 +106,7 @@ I like to build free and open-source software for working class people the world
 
 You can help support my work with the link below.
 
-<div style="transform: scale(0.5); transform-origin: center; display: inline-block;">
+<div style="transform: scale(0.75); transform-origin: left; display: inline-block;">
     <script height="50%" type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
         data-name="bmc-button" 
         data-slug="lilyfarm" 
