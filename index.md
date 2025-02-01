@@ -106,7 +106,21 @@ I like to build free and open-source software for working class people the world
 
 You can help support my work with the link below.
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="lilyfarm" data-color="#FFDD00" data-emoji="🌈"  data-font="Lato" data-text="buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+<div style="transform: scale(0.5); transform-origin: center; display: inline-block;">
+    <script height="50%" type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+        data-name="bmc-button" 
+        data-slug="lilyfarm" 
+        data-color="#FFDD00" 
+        data-emoji="🌈"  
+        data-font="Lato" 
+        data-text="buy me a coffee" 
+        data-outline-color="#000000" 
+        data-font-color="#000000" 
+        data-coffee-color="#ffffff">
+    </script>
+</div>
+
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4F6FRWCSL"></script>
