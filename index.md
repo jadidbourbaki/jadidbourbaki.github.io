@@ -1,17 +1,19 @@
 ---
 layout: default
-theme: minima
+theme: dinky
 ---
 
 ### About
 
-mathematician, cryptographer, and student at the city college of new york. <br/>
+Mathematician, Cryptographer.
+
+Currently a student at the [City College of New York](https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3) <br/>
 
 **email**: hayder dot research at gmail.com
 
 [google scholar](https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en)
 
-### Research
+### Publications
 
 **A Privacy Model for Classical & Learned Bloom Filters** &mdash; [preprint](https://arxiv.org/abs/2501.15751) <br/>
 *Hayder Tirmazi*
