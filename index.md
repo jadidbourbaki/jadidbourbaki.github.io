@@ -7,9 +7,7 @@ Mathematician, Cryptographer.
 
 Currently a student at the [City College of New York](https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3) <br/>
 
-**email**: hayder dot research at gmail.com
-
-[google scholar](https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en)
+![image of quantum computing](quantum_computing_image.gif)
 
 ### Publications
 
@@ -94,13 +92,19 @@ Currently a student at the [City College of New York](https://www.ccny.cuny.edu/
 
 ### Open Source
 
-I like to build free and open-source software for working class people the world over.
+I like to build free and open-source software for working-class people.
 
-- [lilyfarmd](https://lilyfarm.org/getLocation), a Farmers' Market platform to access local healthy food grown in your community. We try to include information on which Farmers' Markets support social subsidies such as the Supplemental Nutrition Assistance Program ([SNAP](https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program)) and the Farmers' Market Nutrition Program ([FMNP](https://www.nyc.gov/site/dfta/about/farmers_market_nutrition_program.page)) in the United States.
+[lilyfarmd](https://lilyfarm.org/getLocation), a platform to access affordable healthy food grown in your community. We try to include information on which Farmers' Markets support social subsidies such as [SNAP](https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program) and [FMNP](https://www.nyc.gov/site/dfta/about/farmers_market_nutrition_program.page).
 
-- [Baldwin project](https://lilyfarm.org/developerResources/baldwin.html), provides guidance and resources to unlearn toxic masculinity. If you are incarcerated, or are seeking to escape violent or toxic patterns of behavior, or are struggling with harmful internalized tendencies such as suppression of emotion or internalized misogyny, we are here to help. The project is mainly aimed at men from the Middle East, North Africa, and South Asia.
+[Baldwin project](https://lilyfarm.org/developerResources/baldwin.html), provides guidance and resources to unlearn toxic masculinity. Mainly aimed at men from the Middle East, North Africa, and South Asia.
 
-- [lilypond](https://lilyfarm.org/static/lily.html), a fun, free, open-source game providing representation to refugee children.
+[lilypond](https://lilyfarm.org/static/lily.html), a fun, free, open-source game providing representation to refugee children.
+
+### Contact
+
+**email**: hayder dot research at gmail.com
+
+[google scholar](https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en)
 
 You can help support my work with the link below.
 
@@ -117,8 +121,6 @@ You can help support my work with the link below.
         data-coffee-color="#ffffff">
     </script>
 </div>
-
-
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4F6FRWCSL"></script>
