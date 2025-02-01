@@ -1,6 +1,6 @@
 ---
 layout: default
-theme: dinky
+theme: minimal
 ---
 
 ### About
