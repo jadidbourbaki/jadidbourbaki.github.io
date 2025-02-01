@@ -9,6 +9,8 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
 
 **email**: hayder dot research at gmail.com
 
+[google scholar](https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en)
+
 ### Research
 
 **A Privacy Model for Classical & Learned Bloom Filters** &mdash; [preprint](https://arxiv.org/abs/2501.15751) <br/>
@@ -89,7 +91,3 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
 {% endhighlight %}
 
 </details>
-
-
-
-
