@@ -27,13 +27,15 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       url={https://arxiv.org/abs/2501.15751}, 
 }
 ```
+
 </details>
+
 
 **An Introduction to Protein Cryptography** &mdash; [preprint](https://eprint.iacr.org/2025/089) <br/>
 *Hayder Tirmazi, Tien Phuoc Tran*
 <details>
 <summary>BibTex Citation</summary>
-  
+      
 ```bibtex
 @misc{cryptoeprint:2025/089,
       author = {Hayder Tirmazi and Tien Phuoc Tran},
@@ -43,6 +45,7 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       url = {https://eprint.iacr.org/2025/089}
 }
 ```
+
 </details>
 
 
@@ -50,7 +53,7 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
 *Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran*
 <details>
 <summary>BibTex Citation</summary>
-  
+      
 ```bibtex
 @misc{tirmazi2024computationalcomplexitygameboy,
       title={Computational Complexity of Game Boy Games}, 
@@ -62,7 +65,9 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       url={https://arxiv.org/abs/2412.15469}, 
 }
 ```
+
 </details>
+
 
 **Adversary Resilient Learned Bloom Filters** &mdash; [preprint](https://arxiv.org/abs/2409.06556) <br/>
 *Allison Bishop, Hayder Tirmazi*
@@ -80,6 +85,7 @@ mathematician, cryptographer, and student at the city college of new york. <br/>
       url={https://arxiv.org/abs/2409.06556}, 
 }
 ```
+
 </details>
 
 
