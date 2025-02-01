@@ -3,8 +3,6 @@ layout: default
 theme: minimal
 ---
 
-### About
-
 Mathematician, Cryptographer.
 
 Currently a student at the [City College of New York](https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3) <br/>
