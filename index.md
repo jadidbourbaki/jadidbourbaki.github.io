@@ -3,7 +3,13 @@ layout: default
 theme: minima
 ---
 
-# Research
+### About
+
+mathematician, cryptographer, and student at the city college of new york. <br/>
+
+**email**: hayder dot research at gmail.com
+
+### Research
 
 **A Privacy Model for Classical & Learned Bloom Filters** &mdash; [preprint](https://arxiv.org/abs/2501.15751) <br/>
 *Hayder Tirmazi*
