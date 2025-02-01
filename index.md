@@ -1,5 +1,6 @@
 ---
 layout: default
+title: حيدر الترمزي
 theme: minima
 ---
 
