@@ -23,9 +23,7 @@ theme: minimal
 </style>
 
 <div class="content">
-  <h1>Hayder Tirmazi</h1>
-  <h2>Mathematician, Cryptographer</h2>
-  
+  <p>Mathematician, Cryptographer</p>
   <p>Currently a student at <a href="https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3">City College of New York</a></p>
   
   <h3>Publications</h3>
