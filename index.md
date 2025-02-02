@@ -28,21 +28,23 @@ theme: minimal
   
   <p>Currently a student at <a href="https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3">City College of New York</a></p>
   
-  <img src="quantum_computing_image.gif" alt="Quantum Computing" loading="lazy">
-
   <h3>Publications</h3>
   <ul>
     <li>
       <a href="https://arxiv.org/abs/2501.15751">A Privacy Model for Classical & Learned Bloom Filters</a> — Hayder Tirmazi
+      [<a href="#" onclick="navigator.clipboard.writeText('@misc{tirmazi2025privacymodelclassical, title={A Privacy Model for Classical & Learned Bloom Filters}, author={Hayder Tirmazi}, year={2025}, eprint={2501.15751}, archivePrefix={arXiv}, primaryClass={cs.CR}, url={https://arxiv.org/abs/2501.15751}}'); alert('BibTex copied!');">Copy BibTex</a>]
     </li>
     <li>
       <a href="https://eprint.iacr.org/2025/089">An Introduction to Protein Cryptography</a> — Hayder Tirmazi, Tien Phuoc Tran
+      [<a href="#" onclick="navigator.clipboard.writeText('@misc{cryptoeprint:2025/089, author = {Hayder Tirmazi and Tien Phuoc Tran}, title = {An Introduction to Protein Cryptography}, howpublished = {Cryptology {ePrint} Archive, Paper 2025/089}, year = {2025}, url = {https://eprint.iacr.org/2025/089}}'); alert('BibTex copied!');">Copy BibTex</a>]
     </li>
     <li>
       <a href="https://arxiv.org/abs/2412.15469">Computational Complexity of Game Boy Games</a> — Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran
+      [<a href="#" onclick="navigator.clipboard.writeText('@misc{tirmazi2024computationalcomplexitygameboy, title={Computational Complexity of Game Boy Games}, author={Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran}, year={2024}, eprint={2412.15469}, archivePrefix={arXiv}, primaryClass={cs.CC}, url={https://arxiv.org/abs/2412.15469}}'); alert('BibTex copied!');">Copy BibTex</a>]
     </li>
     <li>
       <a href="https://arxiv.org/abs/2409.06556">Adversary Resilient Learned Bloom Filters</a> — Allison Bishop, Hayder Tirmazi
+      [<a href="#" onclick="navigator.clipboard.writeText('@misc{bishop2025adversaryresilientlearnedbloom, title={Adversary Resilient Learned Bloom Filters}, author={Allison Bishop and Hayder Tirmazi}, year={2025}, eprint={2409.06556}, archivePrefix={arXiv}, primaryClass={cs.CR}, url={https://arxiv.org/abs/2409.06556}}'); alert('BibTex copied!');">Copy BibTex</a>]
     </li>
   </ul>
 
