@@ -243,6 +243,72 @@
         .copy-button:hover {
             background: #f0f0f0;
         }
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            justify-content: center;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        .support-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .support-section h3 {
+            color: white;
+            border-bottom: none;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .support-section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .support-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #6366f1;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .support-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
     </style>
 </head>
 <body>
@@ -345,27 +411,25 @@
             <a href="mailto:hayder.research@gmail.com">Get in Touch</a>
         </section>
 
-        <section class="contact">
-            <h3>Contact</h3>
-            <div class="social-links">
-                <a href="mailto:hayder.research@gmail.com" aria-label="Email">hayder.research@gmail.com</a>
-                <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en" aria-label="Google Scholar">Google Scholar</a>
-            </div>
-            <div style="transform: scale(0.75); transform-origin: left; margin-top: 1rem;">
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
-                    data-name="bmc-button" 
-                    data-slug="lilyfarm" 
-                    data-color="#FFDD00" 
-                    data-emoji="🌈"  
-                    data-font="Lato" 
-                    data-text="buy me a coffee" 
-                    data-outline-color="#000000" 
-                    data-font-color="#000000" 
-                    data-coffee-color="#ffffff">
-                </script>
-            </div>
+        <section class="social-links">
+            <a href="mailto:hayder.research@gmail.com" class="social-link">
+                📧 Email
+            </a>
+            <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en" class="social-link">
+                📚 Google Scholar
+            </a>
+            <a href="https://github.com/jadidbourbaki" class="social-link">
+                💻 GitHub
+            </a>
         </section>
-    </div>
+
+        <section class="support-section">
+            <h3>Support My Research & Open Source Work</h3>
+            <p>Your support helps me continue developing free educational resources and maintaining open-source projects that benefit our community.</p>
+            <a href="https://www.buymeacoffee.com/lilyfarm" class="support-button">
+                Support via Buy Me a Coffee 🌈
+            </a>
+        </section>
 
         <script>
         function toggleBibtex(id) {
