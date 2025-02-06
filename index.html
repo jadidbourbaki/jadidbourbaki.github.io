@@ -31,6 +31,13 @@
             box-shadow: var(--paper-shadow);
         }
 
+        .hero-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
         .header {
             margin-bottom: 2rem;
             padding-bottom: 1rem;
@@ -65,19 +72,69 @@
             border-radius: 6px;
         }
 
-        .education p {
-            margin: 0.5rem 0;
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
         }
 
-        a {
-            color: var(--accent-color);
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 6px;
+            font-weight: 600;
             text-decoration: none;
-            transition: color 0.2s ease;
+            transition: all 0.2s ease;
+            justify-content: center;
         }
 
-        a:hover {
-            color: #2980b9;
-            text-decoration: underline;
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .support-section {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .support-section h3 {
+            color: white;
+            border: none;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .support-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .support-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #6366f1;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .support-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .publications {
@@ -97,106 +154,12 @@
             transform: translateX(5px);
         }
 
-        .publications .paper-title {
+        .paper-title {
             font-weight: 600;
             color: var(--primary-color);
-        }
-
-        .bibtex-button {
-            display: inline-block;
-            padding: 0.25rem 0.5rem;
-            font-size: 0.875rem;
-            color: #666;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-left: 0.5rem;
-        }
-
-        .bibtex-button:hover {
-            background: #f0f0f0;
             text-decoration: none;
         }
 
-        .projects {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .projects li {
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 6px;
-            transition: transform 0.2s ease;
-        }
-
-        .projects li:hover {
-            transform: translateY(-2px);
-        }
-
-        .contact {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 2px solid #eee;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .collaborate-cta {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: var(--accent-color);
-            color: white;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .collaborate-cta h3 {
-            color: white;
-            margin: 0 0 1rem;
-            border-bottom: none;
-        }
-
-        .collaborate-cta a {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: white;
-            color: var(--accent-color);
-            border-radius: 4px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.2s ease, color 0.2s ease;
-        }
-
-        .collaborate-cta a:hover {
-            background: var(--primary-color);
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                margin: 1rem;
-                padding: 1rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .projects {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* New styles for BibTeX display */
         .bibtex-container {
             display: none;
             margin-top: 1rem;
@@ -226,7 +189,6 @@
 
         .bibtex-button:hover {
             background: #f0f0f0;
-            text-decoration: none;
         }
 
         .copy-button {
@@ -243,136 +205,43 @@
         .copy-button:hover {
             background: #f0f0f0;
         }
-        .social-links {
-            display: flex;
-            gap: 1.5rem;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 8px;
-            justify-content: center;
-        }
 
-        .social-link {
-            display: flex;
-            align-items: center;
-            padding: 0.75rem 1.5rem;
-            background: white;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-        }
-
-        .social-link:hover {
-            background: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            transform: translateY(-2px);
-        }
-
-        .support-section {
-            margin: 2rem 0;
-            padding: 2rem;
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-            color: white;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .support-section h3 {
-            color: white;
-            border-bottom: none;
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
-        }
-
-        .support-section p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .support-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: white;
-            color: #6366f1;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        .support-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .hero-section {
+        .projects {
+            list-style: none;
+            padding: 0;
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .projects li {
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            transition: transform 0.2s ease;
+        }
+
+        .projects li:hover {
+            transform: translateY(-2px);
         }
 
         @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
             .hero-section {
                 grid-template-columns: 1fr;
             }
-        }
-
-        .social-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .collaborate-section {
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            text-align: center;
-            margin: 2rem 0;
-        }
-
-        .collaborate-section h3 {
-            color: white;
-            border: none;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .action-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .action-button {
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-        }
-
-        .primary-button {
-            background: white;
-            color: #3498db;
-        }
-
-        .secondary-button {
-            background: transparent;
-            border: 2px solid white;
-            color: white;
-        }
-
-        .support-section {
-            margin-top: 0;
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -394,13 +263,12 @@
             </div>
         </div>
 
-        <section class="collaborate-section">
-            <h3>Let's Create Something Amazing Together</h3>
-            <p>I'm passionate about advancing mathematics, cryptography, and open-source development. Whether you're interested in research collaboration, open-source contributions, or discussing new ideas, I'd love to connect.</p>
-            <div class="action-buttons">
-                <a href="mailto:hayder.research@gmail.com" class="action-button primary-button">Start Collaboration</a>
-                <a href="https://www.buymeacoffee.com/lilyfarm" class="action-button secondary-button">Support My Work 🌈</a>
-            </div>
+        <section class="support-section">
+            <h3>Support Open Access Research</h3>
+            <p>I'm passionate about doing open-access research and building free, open-source software for working-class people the world over.</p>
+            <a href="https://www.buymeacoffee.com/lilyfarm" class="support-button">
+                Support My Work 🌈
+            </a>
         </section>
 
         <section>
@@ -458,7 +326,7 @@
                     <div id="bibtex4" class="bibtex-container">@misc{bishop2025adversaryresilientlearnedbloom,
     title     = {Adversary Resilient Learned Bloom Filters},
     author    = {Allison Bishop and Hayder Tirmazi},
-    year      = {2024},
+    year      = {2025},
     eprint    = {2409.06556},
     archivePrefix = {arXiv},
     primaryClass = {cs.CR},
@@ -485,8 +353,9 @@
                 </li>
             </ul>
         </section>
+    </div>
 
-        <script>
+    <script>
         function toggleBibtex(id) {
             const container = document.getElementById(id);
             container.classList.toggle('visible');
