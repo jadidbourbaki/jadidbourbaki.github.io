@@ -1,9 +1,9 @@
 title: Hayder Tirmazi
 description: Mathematician and Cryptographer
 author: Hayder Tirmazi
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
+head:
+  - "<link rel='stylesheet' href='/assets/css/custom.css'>"
 plugins:
   - jekyll-remote-theme
 google_analytics: G-K4F6FRWCSL
-head:
-  - "<link rel='stylesheet' href='/assets/css/custom.css'>"
