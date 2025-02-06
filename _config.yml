@@ -13,13 +13,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# SEO settings
-social:
-  name: Hayder Tirmazi
-  links:
-    - https://scholar.google.com/citations?user=qgOBcYMAAAAJ
-    - https://github.com/jadidbourbaki
-
 # Site configuration
 show_downloads: false
 google_analytics: G-K4F6FRWCSL
