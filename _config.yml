@@ -5,3 +5,5 @@ theme: jekyll-theme-slate
 plugins:
   - jekyll-remote-theme
 google_analytics: G-K4F6FRWCSL
+head:
+  - "<link rel='stylesheet' href='/assets/css/custom.css'>"
