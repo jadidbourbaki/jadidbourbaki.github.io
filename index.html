@@ -150,6 +150,37 @@
             margin-top: 1rem;
         }
 
+        .collaborate-cta {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .collaborate-cta h3 {
+            color: white;
+            margin: 0 0 1rem;
+            border-bottom: none;
+        }
+
+        .collaborate-cta a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: white;
+            color: var(--accent-color);
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .collaborate-cta a:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
         @media (max-width: 768px) {
             .container {
                 margin: 1rem;
@@ -172,7 +203,7 @@
             <h1>Hayder Tirmazi</h1>
             <p class="role">Mathematician & Cryptographer</p>
             <div class="education">
-            <p>Currently a student at <a href="https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3">City College of New York</a></p>
+                <p>Currently a student at <a href="https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3">City College of New York</a></p>
             </div>
         </header>
 
@@ -225,11 +256,18 @@
             </ul>
         </section>
 
+        <!-- New Collaboration CTA Section -->
+        <section class="collaborate-cta">
+            <h3>Let's Collaborate!</h3>
+            <p>I'm always open to discussing new ideas, research opportunities, or projects. Feel free to reach out!</p>
+            <a href="mailto:hayder.research@gmail.com">Get in Touch</a>
+        </section>
+
         <section class="contact">
             <h3>Contact</h3>
             <div class="social-links">
-                <a href="mailto:hayder.research@gmail.com">hayder.research@gmail.com</a>
-                <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en">Google Scholar</a>
+                <a href="mailto:hayder.research@gmail.com" aria-label="Email">hayder.research@gmail.com</a>
+                <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en" aria-label="Google Scholar">Google Scholar</a>
             </div>
             <div style="transform: scale(0.75); transform-origin: left; margin-top: 1rem;">
                 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
