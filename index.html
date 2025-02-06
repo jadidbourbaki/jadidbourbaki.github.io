@@ -309,17 +309,99 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
+
+        .hero-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .collaborate-section {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .collaborate-section h3 {
+            color: white;
+            border: none;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .action-button {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .primary-button {
+            background: white;
+            color: #3498db;
+        }
+
+        .secondary-button {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .support-section {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>Hayder Tirmazi</h1>
-            <p class="role">Mathematician & Cryptographer</p>
-            <div class="education">
-                <p>Currently a student at <a href="https://www.ccny.cuny.edu/?srsltid=AfmBOorqHdVvcZ__0rvLc3XSP4U3-edoeLiyci5odU9sA8vytoF2hlI3">City College of New York</a></p>
+        <div class="hero-section">
+            <header class="header">
+                <h1>Hayder Tirmazi</h1>
+                <p class="role">Mathematician & Cryptographer</p>
+                <div class="education">
+                    <p>Currently a student at <a href="https://www.ccny.cuny.edu">City College of New York</a></p>
+                </div>
+            </header>
+
+            <div class="social-links">
+                <a href="mailto:hayder.research@gmail.com" class="social-link">📧 Email</a>
+                <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en" class="social-link">📚 Scholar</a>
+                <a href="https://github.com/jadidbourbaki" class="social-link">💻 GitHub</a>
             </div>
-        </header>
+        </div>
+
+        <section class="collaborate-section">
+            <h3>Let's Create Something Amazing Together</h3>
+            <p>I'm passionate about advancing mathematics, cryptography, and open-source development. Whether you're interested in research collaboration, open-source contributions, or discussing new ideas, I'd love to connect.</p>
+            <div class="action-buttons">
+                <a href="mailto:hayder.research@gmail.com" class="action-button primary-button">Start Collaboration</a>
+                <a href="https://www.buymeacoffee.com/lilyfarm" class="action-button secondary-button">Support My Work 🌈</a>
+            </div>
+        </section>
 
         <section>
             <h3>Research Interests</h3>
@@ -402,33 +484,6 @@
                     <p>A free game for refugee children.</p>
                 </li>
             </ul>
-        </section>
-
-        <!-- New Collaboration CTA Section -->
-        <section class="collaborate-cta">
-            <h3>Let's Collaborate!</h3>
-            <p>I'm always open to discussing new ideas, research opportunities, or projects. Feel free to reach out!</p>
-            <a href="mailto:hayder.research@gmail.com">Get in Touch</a>
-        </section>
-
-        <section class="social-links">
-            <a href="mailto:hayder.research@gmail.com" class="social-link">
-                📧 Email
-            </a>
-            <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en" class="social-link">
-                📚 Google Scholar
-            </a>
-            <a href="https://github.com/jadidbourbaki" class="social-link">
-                💻 GitHub
-            </a>
-        </section>
-
-        <section class="support-section">
-            <h3>Support My Research & Open Source Work</h3>
-            <p>Your support helps me continue developing free educational resources and maintaining open-source projects that benefit our community.</p>
-            <a href="https://www.buymeacoffee.com/lilyfarm" class="support-button">
-                Support via Buy Me a Coffee 🌈
-            </a>
         </section>
 
         <script>
