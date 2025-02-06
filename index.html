@@ -195,6 +195,54 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* New styles for BibTeX display */
+        .bibtex-container {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f1f1f1;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+        }
+
+        .bibtex-container.visible {
+            display: block;
+        }
+
+        .bibtex-button {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            color: #666;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 0.5rem;
+        }
+
+        .bibtex-button:hover {
+            background: #f0f0f0;
+            text-decoration: none;
+        }
+
+        .copy-button {
+            float: right;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            color: #666;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background: #f0f0f0;
+        }
     </style>
 </head>
 <body>
@@ -218,22 +266,56 @@
                 <li>
                     <a href="https://arxiv.org/abs/2501.15751" class="paper-title">A Privacy Model for Classical & Learned Bloom Filters</a>
                     <p>Hayder Tirmazi</p>
-                    <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{tirmazi2025privacymodelclassical, title={A Privacy Model for Classical & Learned Bloom Filters}, author={Hayder Tirmazi}, year={2025}, eprint={2501.15751}, archivePrefix={arXiv}, primaryClass={cs.CR}, url={https://arxiv.org/abs/2501.15751}}'); alert('BibTex copied!');">Copy BibTex</a>
+                    <button class="bibtex-button" onclick="toggleBibtex('bibtex1')">Show BibTeX</button>
+                    <div id="bibtex1" class="bibtex-container">@misc{tirmazi2025privacymodelclassical,
+    title     = {A Privacy Model for Classical & Learned Bloom Filters},
+    author    = {Hayder Tirmazi},
+    year      = {2025},
+    eprint    = {2501.15751},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CR},
+    url       = {https://arxiv.org/abs/2501.15751}
+}<button class="copy-button" onclick="copyBibtex('bibtex1')">Copy</button></div>
                 </li>
                 <li>
                     <a href="https://eprint.iacr.org/2025/089" class="paper-title">An Introduction to Protein Cryptography</a>
                     <p>Hayder Tirmazi, Tien Phuoc Tran</p>
-                    <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{cryptoeprint:2025/089, author = {Hayder Tirmazi and Tien Phuoc Tran}, title = {An Introduction to Protein Cryptography}, howpublished = {Cryptology {ePrint} Archive, Paper 2025/089}, year = {2025}, url = {https://eprint.iacr.org/2025/089}}'); alert('BibTex copied!');">Copy BibTex</a>
+                    <button class="bibtex-button" onclick="toggleBibtex('bibtex2')">Show BibTeX</button>
+                    <div id="bibtex2" class="bibtex-container">@misc{cryptoeprint:2025/089,
+    author    = {Hayder Tirmazi and Tien Phuoc Tran},
+    title     = {An Introduction to Protein Cryptography},
+    howpublished = {Cryptology {ePrint} Archive, Paper 2025/089},
+    year      = {2025},
+    url       = {https://eprint.iacr.org/2025/089}
+}<button class="copy-button" onclick="copyBibtex('bibtex2')">Copy</button></div>
                 </li>
                 <li>
                     <a href="https://arxiv.org/abs/2412.15469" class="paper-title">Computational Complexity of Game Boy Games</a>
                     <p>Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran</p>
-                    <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{tirmazi2024computationalcomplexitygameboy, title={Computational Complexity of Game Boy Games}, author={Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran}, year={2024}, eprint={2412.15469}, archivePrefix={arXiv}, primaryClass={cs.CC}, url={https://arxiv.org/abs/2412.15469}}'); alert('BibTex copied!');">Copy BibTex</a>
+                    <button class="bibtex-button" onclick="toggleBibtex('bibtex3')">Show BibTeX</button>
+                    <div id="bibtex3" class="bibtex-container">@misc{tirmazi2024computationalcomplexitygameboy,
+    title     = {Computational Complexity of Game Boy Games},
+    author    = {Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran},
+    year      = {2024},
+    eprint    = {2412.15469},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CC},
+    url       = {https://arxiv.org/abs/2412.15469}
+}<button class="copy-button" onclick="copyBibtex('bibtex3')">Copy</button></div>
                 </li>
                 <li>
                     <a href="https://arxiv.org/abs/2409.06556" class="paper-title">Adversary Resilient Learned Bloom Filters</a>
                     <p>Allison Bishop, Hayder Tirmazi</p>
-                    <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{bishop2025adversaryresilientlearnedbloom, title={Adversary Resilient Learned Bloom Filters}, author={Allison Bishop and Hayder Tirmazi}, year={2025}, eprint={2409.06556}, archivePrefix={arXiv}, primaryClass={cs.CR}, url={https://arxiv.org/abs/2409.06556}}'); alert('BibTex copied!');">Copy BibTex</a>
+                    <button class="bibtex-button" onclick="toggleBibtex('bibtex4')">Show BibTeX</button>
+                    <div id="bibtex4" class="bibtex-container">@misc{bishop2025adversaryresilientlearnedbloom,
+    title     = {Adversary Resilient Learned Bloom Filters},
+    author    = {Allison Bishop and Hayder Tirmazi},
+    year      = {2025},
+    eprint    = {2409.06556},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CR},
+    url       = {https://arxiv.org/abs/2409.06556}
+}<button class="copy-button" onclick="copyBibtex('bibtex4')">Copy</button></div>
                 </li>
             </ul>
         </section>
@@ -284,6 +366,30 @@
             </div>
         </section>
     </div>
+
+        <script>
+        function toggleBibtex(id) {
+            const container = document.getElementById(id);
+            container.classList.toggle('visible');
+        }
+
+        function copyBibtex(id) {
+            const container = document.getElementById(id);
+            const bibtexText = container.textContent.replace('Copy', '').trim();
+            navigator.clipboard.writeText(bibtexText)
+                .then(() => {
+                    const copyButton = container.querySelector('.copy-button');
+                    const originalText = copyButton.textContent;
+                    copyButton.textContent = 'Copied!';
+                    setTimeout(() => {
+                        copyButton.textContent = originalText;
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+        }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4F6FRWCSL"></script>
