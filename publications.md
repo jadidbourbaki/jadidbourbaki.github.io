@@ -5,22 +5,29 @@ title: Publications
 
 # Publications  
 
-## **Recent Work**  
+## Recent Work
 
-1. **[A Privacy Model for Classical & Learned Bloom Filters](https://arxiv.org/abs/2501.15751)**  
-   *Hayder Tirmazi*  
-   `[Copy BibTeX]`  
-
-2. **[An Introduction to Protein Cryptography](https://eprint.iacr.org/2025/089)**  
-   *Hayder Tirmazi, Tien Phuoc Tran*  
-   `[Copy BibTeX]`  
-
-3. **[Computational Complexity of Game Boy Games](https://arxiv.org/abs/2412.15469)**  
-   *Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran*  
-   `[Copy BibTeX]`  
-
-4. **[Adversary Resilient Learned Bloom Filters](https://arxiv.org/abs/2409.06556)**  
-   *Allison Bishop, Hayder Tirmazi*  
-   `[Copy BibTeX]`  
-
-For a full list of my research papers, visit my [Google Scholar](https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en).  
+<section>
+    <ul class="publications">
+        <li>
+            <a href="https://arxiv.org/abs/2501.15751" class="paper-title">A Privacy Model for Classical & Learned Bloom Filters</a>
+            <p>Hayder Tirmazi</p>
+            <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{tirmazi2025privacymodelclassical, title={A Privacy Model for Classical & Learned Bloom Filters}, author={Hayder Tirmazi}, year={2025}, eprint={2501.15751}, archivePrefix={arXiv}, primaryClass={cs.CR}, url={https://arxiv.org/abs/2501.15751}}'); alert('BibTex copied!');">Copy BibTex</a>
+        </li>
+        <li>
+            <a href="https://eprint.iacr.org/2025/089" class="paper-title">An Introduction to Protein Cryptography</a>
+            <p>Hayder Tirmazi, Tien Phuoc Tran</p>
+            <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{cryptoeprint:2025/089, author = {Hayder Tirmazi and Tien Phuoc Tran}, title = {An Introduction to Protein Cryptography}, howpublished = {Cryptology {ePrint} Archive, Paper 2025/089}, year = {2025}, url = {https://eprint.iacr.org/2025/089}}'); alert('BibTex copied!');">Copy BibTex</a>
+        </li>
+        <li>
+            <a href="https://arxiv.org/abs/2412.15469" class="paper-title">Computational Complexity of Game Boy Games</a>
+            <p>Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran</p>
+            <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{tirmazi2024computationalcomplexitygameboy, title={Computational Complexity of Game Boy Games}, author={Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran}, year={2024}, eprint={2412.15469}, archivePrefix={arXiv}, primaryClass={cs.CC}, url={https://arxiv.org/abs/2412.15469}}'); alert('BibTex copied!');">Copy BibTex</a>
+        </li>
+        <li>
+            <a href="https://arxiv.org/abs/2409.06556" class="paper-title">Adversary Resilient Learned Bloom Filters</a>
+            <p>Allison Bishop, Hayder Tirmazi</p>
+            <a href="#" class="bibtex-button" onclick="navigator.clipboard.writeText('@misc{bishop2025adversaryresilientlearnedbloom, title={Adversary Resilient Learned Bloom Filters}, author={Allison Bishop and Hayder Tirmazi}, year={2025}, eprint={2409.06556}, archivePrefix={arXiv}, primaryClass={cs.CR}, url={https://arxiv.org/abs/2409.06556}}'); alert('BibTex copied!');">Copy BibTex</a>
+        </li>
+    </ul>
+</section>
