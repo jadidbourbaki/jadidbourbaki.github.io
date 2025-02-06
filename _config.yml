@@ -1,12 +1,7 @@
-title: Hayder Tirmazi  
-description: Mathematician and Cryptographer  
-author: Hayder Tirmazi  
-markdown: kramdown  
-remote_theme: pages-themes/minimal@v0.2.0  
+title: Hayder Tirmazi
+description: Mathematician and Cryptographer
+author: Hayder Tirmazi
+theme: jekyll-theme-slate
 plugins:
   - jekyll-remote-theme
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-show_downloads: false  
-google_analytics: G-K4F6FRWCSL  
+google_analytics: G-K4F6FRWCSL
