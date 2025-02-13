@@ -6,69 +6,71 @@
     <title>Hayder Tirmazi - Mathematician & Cryptographer</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --background-color: #f9fafb;
-            --text-color: #2c3e50;
-            --paper-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --serif-font: "Computer Modern Serif", Georgia, "Times New Roman", serif;
+            --sans-font: "Computer Modern Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+            --mono-font: "Computer Modern Typewriter", monospace;
+            --paper-color: #fffef8;
+            --text-color: #222;
+            --link-color: #00319c;
+            --max-width: 800px;
+            --side-margin: max(calc((100% - var(--max-width)) / 2), 1rem);
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: var(--serif-font);
             line-height: 1.6;
+            font-size: 16px;
             color: var(--text-color);
-            background-color: var(--background-color);
+            background: #f0f0f0;
             margin: 0;
             padding: 0;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: var(--paper-shadow);
+        .paper {
+            background: var(--paper-color);
+            margin: 2rem var(--side-margin);
+            padding: 3rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-height: 100vh;
         }
 
-        .hero-section {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
+        .title {
+            text-align: center;
             margin-bottom: 2rem;
-        }
-
-        .header {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #eee;
-        }
-
-        h1 {
             font-size: 2.5rem;
-            color: var(--primary-color);
-            margin: 0;
-            font-weight: 700;
+            font-weight: normal;
         }
 
-        h3 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #eee;
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-style: italic;
         }
 
-        .role {
-            font-size: 1.25rem;
-            color: #666;
-            margin: 0.5rem 0;
+        .author-info {
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-        .education {
-            margin: 1rem 0;
-            padding: 1rem;
-            border-radius: 6px;
+        .author-info a {
+            margin: 0 0.5rem;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        h2 {
+            font-family: var(--serif-font);
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .abstract {
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            line-height: 1.7;
         }
 
         .publications {
@@ -78,31 +80,43 @@
 
         .publications li {
             margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 6px;
-            transition: transform 0.2s ease;
-        }
-
-        .publications li:hover {
-            transform: translateX(5px);
+            padding-left: 2rem;
+            text-indent: -2rem;
         }
 
         .paper-title {
-            font-weight: 600;
-            color: var(--primary-color);
+            color: var(--link-color);
             text-decoration: none;
+            font-style: italic;
+        }
+
+        .paper-title:hover {
+            text-decoration: underline;
+        }
+
+        .projects {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects li {
+            margin-bottom: 1rem;
+        }
+
+        .projects a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: bold;
         }
 
         .bibtex-container {
-            display: none;
-            margin-top: 1rem;
+            font-family: var(--mono-font);
+            font-size: 0.9rem;
+            background: #f8f8f8;
             padding: 1rem;
-            background: #f1f1f1;
-            border-radius: 4px;
-            font-family: monospace;
-            white-space: pre;
-            overflow-x: auto;
+            margin: 0.5rem 0;
+            display: none;
+            white-space: pre-wrap;
         }
 
         .bibtex-container.visible {
@@ -110,187 +124,120 @@
         }
 
         .bibtex-button {
-            display: inline-block;
-            padding: 0.25rem 0.5rem;
-            font-size: 0.875rem;
+            font-family: var(--sans-font);
+            font-size: 0.8rem;
             color: #666;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            background: transparent;
+            border: 1px solid #999;
+            padding: 0.2rem 0.5rem;
             cursor: pointer;
             margin-left: 0.5rem;
         }
 
-        .bibtex-button:hover {
-            background: #f0f0f0;
-        }
-
-        .copy-button {
-            float: right;
-            padding: 0.25rem 0.5rem;
-            font-size: 0.875rem;
-            color: #666;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .copy-button:hover {
-            background: #f0f0f0;
-        }
-
-        .projects {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .projects li {
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 6px;
-            transition: transform 0.2s ease;
-        }
-
-        .projects li:hover {
-            transform: translateY(-2px);
-        }
-
         @media (max-width: 768px) {
-            .container {
-                margin: 1rem;
-                padding: 1rem;
+            .paper {
+                margin: 0;
+                padding: 1.5rem;
             }
             
-            .hero-section {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
+            .title {
                 font-size: 2rem;
-            }
-            
-            .projects {
-                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="hero-section">
-            <header class="header">
-                <h1>Hayder Tirmazi</h1>
-                <p class="role">Mathematician & Cryptographer</p>
-                <div class="education">
-                    <p>Currently a student at <a href="https://www.ccny.cuny.edu">City College of New York</a></p>
-                </div>
-
+    <div class="paper">
+        <h1 class="title">Hayder Tirmazi</h1>
+        <div class="subtitle">Mathematician & Cryptographer</div>
+        <div class="author-info">
+            <p>City College of New York</p>
+            <p>
                 <a href="mailto:hayder.research@gmail.com">📧 Email</a>
                 <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en">📚 Scholar</a>
                 <a href="https://github.com/jadidbourbaki">💻 GitHub</a>
-            </header>
+            </p>
         </div>
 
-        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="lilyfarm" data-description="Support me on Buy me a coffee!" data-message="Support open-access research and free software for working-class people." data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+        <h2>Research Interests</h2>
+        <div class="abstract">
+            My research focuses on theoretical computer science and cryptography, with particular emphasis on privacy-preserving data structures, computational complexity, and novel cryptographic applications.
+        </div>
 
-        <section>
-            <h3>Research Interests</h3>
-            <p>My research focuses on theoretical computer science and cryptography, with particular emphasis on privacy-preserving data structures, computational complexity, and novel cryptographic applications.</p>
-        </section>
-
-        <section>
-            <h3>Recent Publications</h3>
-            <ul class="publications">
-                <li>
-                    <a href="https://arxiv.org/abs/2501.15751" class="paper-title">A Privacy Model for Classical & Learned Bloom Filters</a>
-                    <p>Hayder Tirmazi</p>
-                    <button class="bibtex-button" onclick="toggleBibtex('bibtex1')">Show BibTeX</button>
-                    <div id="bibtex1" class="bibtex-container">@misc{tirmazi2025privacymodelclassical,
-    title     = {A Privacy Model for Classical & Learned Bloom Filters},
-    author    = {Hayder Tirmazi},
-    year      = {2025},
-    eprint    = {2501.15751},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.CR},
-    url       = {https://arxiv.org/abs/2501.15751}
-}<button class="copy-button" onclick="copyBibtex('bibtex1')">Copy</button></div>
-                </li>
-                <li>
-                    <a href="https://eprint.iacr.org/2025/218" class="paper-title">LSM Trees in Adversarial Environments</a>
-                    <p>Hayder Tirmazi</p>
-                    <button class="bibtex-button" onclick="toggleBibtex('bibtex4')">Show BibTeX</button>
-                    <div id="bibtex4" class="bibtex-container">@misc{cryptoeprint:2025/218,
-      author = {Hayder Tirmazi},
-      title = {{LSM} Trees in Adversarial Environments},
-      howpublished = {Cryptology {ePrint} Archive, Paper 2025/218},
-      year = {2025},
-      url = {https://eprint.iacr.org/2025/218}
-}<button class="copy-button" onclick="copyBibtex('bibtex4')">Copy</button></div>
-                </li>
-                <li>
-                    <a href="https://eprint.iacr.org/2025/089" class="paper-title">An Introduction to Protein Cryptography</a>
-                    <p>Hayder Tirmazi, Tien Phuoc Tran</p>
-                    <button class="bibtex-button" onclick="toggleBibtex('bibtex2')">Show BibTeX</button>
-                    <div id="bibtex2" class="bibtex-container">@misc{cryptoeprint:2025/089,
-    author    = {Hayder Tirmazi and Tien Phuoc Tran},
-    title     = {An Introduction to Protein Cryptography},
+        <h2>Publications</h2>
+        <ul class="publications">
+            <li>
+                <a href="https://eprint.iacr.org/2025/218" class="paper-title">LSM Trees in Adversarial Environments</a>. 
+                Hayder Tirmazi. Cryptology ePrint Archive, Paper 2025/218, 2025.
+                <button class="bibtex-button" onclick="toggleBibtex('bibtex1')">BibTeX</button>
+                <div id="bibtex1" class="bibtex-container">@misc{cryptoeprint:2025/218,
+    author = {Hayder Tirmazi},
+    title = {{LSM} Trees in Adversarial Environments},
+    howpublished = {Cryptology {ePrint} Archive, Paper 2025/218},
+    year = {2025}
+}</div>
+            </li>
+            <li>
+                <a href="https://arxiv.org/abs/2501.15751" class="paper-title">A Privacy Model for Classical & Learned Bloom Filters</a>.
+                Hayder Tirmazi. arXiv:2501.15751, 2025.
+                <button class="bibtex-button" onclick="toggleBibtex('bibtex2')">BibTeX</button>
+                <div id="bibtex2" class="bibtex-container">@misc{tirmazi2025privacymodelclassical,
+    title = {A Privacy Model for Classical \& Learned Bloom Filters},
+    author = {Hayder Tirmazi},
+    year = {2025},
+    eprint = {2501.15751},
+    archivePrefix = {arXiv}
+}</div>
+            </li>
+            <li>
+                <a href="https://eprint.iacr.org/2025/089" class="paper-title">An Introduction to Protein Cryptography</a>.
+                Hayder Tirmazi, Tien Phuoc Tran. Cryptology ePrint Archive, Paper 2025/089, 2025.
+                <button class="bibtex-button" onclick="toggleBibtex('bibtex3')">BibTeX</button>
+                <div id="bibtex3" class="bibtex-container">@misc{cryptoeprint:2025/089,
+    author = {Hayder Tirmazi and Tien Phuoc Tran},
+    title = {An Introduction to Protein Cryptography},
     howpublished = {Cryptology {ePrint} Archive, Paper 2025/089},
-    year      = {2025},
-    url       = {https://eprint.iacr.org/2025/089}
-}<button class="copy-button" onclick="copyBibtex('bibtex2')">Copy</button></div>
-                </li>
-                <li>
-                    <a href="https://arxiv.org/abs/2412.15469" class="paper-title">Computational Complexity of Game Boy Games</a>
-                    <p>Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran</p>
-                    <button class="bibtex-button" onclick="toggleBibtex('bibtex3')">Show BibTeX</button>
-                    <div id="bibtex3" class="bibtex-container">@misc{tirmazi2024computationalcomplexitygameboy,
-    title     = {Computational Complexity of Game Boy Games},
-    author    = {Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran},
-    year      = {2024},
-    eprint    = {2412.15469},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.CC},
-    url       = {https://arxiv.org/abs/2412.15469}
-}<button class="copy-button" onclick="copyBibtex('bibtex3')">Copy</button></div>
-                </li>
-                <li>
-                    <a href="https://arxiv.org/abs/2409.06556" class="paper-title">Adversary Resilient Learned Bloom Filters</a>
-                    <p>Allison Bishop, Hayder Tirmazi</p>
-                    <button class="bibtex-button" onclick="toggleBibtex('bibtex4')">Show BibTeX</button>
-                    <div id="bibtex4" class="bibtex-container">@misc{bishop2025adversaryresilientlearnedbloom,
-    title     = {Adversary Resilient Learned Bloom Filters},
-    author    = {Allison Bishop and Hayder Tirmazi},
-    year      = {2025},
-    eprint    = {2409.06556},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.CR},
-    url       = {https://arxiv.org/abs/2409.06556}
-}<button class="copy-button" onclick="copyBibtex('bibtex4')">Copy</button></div>
-                </li>
-            </ul>
-        </section>
+    year = {2025}
+}</div>
+            </li>
+            <li>
+                <a href="https://arxiv.org/abs/2412.15469" class="paper-title">Computational Complexity of Game Boy Games</a>.
+                Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran. arXiv:2412.15469, 2024.
+                <button class="bibtex-button" onclick="toggleBibtex('bibtex4')">BibTeX</button>
+                <div id="bibtex4" class="bibtex-container">@misc{tirmazi2024computationalcomplexitygameboy,
+    title = {Computational Complexity of Game Boy Games},
+    author = {Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran},
+    year = {2024},
+    eprint = {2412.15469},
+    archivePrefix = {arXiv}
+}</div>
+            </li>
+            <li>
+                <a href="https://arxiv.org/abs/2409.06556" class="paper-title">Adversary Resilient Learned Bloom Filters</a>.
+                Allison Bishop, Hayder Tirmazi. arXiv:2409.06556, 2025.
+                <button class="bibtex-button" onclick="toggleBibtex('bibtex5')">BibTeX</button>
+                <div id="bibtex5" class="bibtex-container">@misc{bishop2025adversaryresilientlearnedbloom,
+    title = {Adversary Resilient Learned Bloom Filters},
+    author = {Allison Bishop and Hayder Tirmazi},
+    year = {2025},
+    eprint = {2409.06556},
+    archivePrefix = {arXiv}
+}</div>
+            </li>
+        </ul>
 
-        <section>
-            <h3>Open Source Projects</h3>
-            <ul class="projects">
-                <li>
-                    <a href="https://lilyfarm.org/getLocation">lilyfarmd</a>
-                    <p>Access affordable healthy food in your community.</p>
-                </li>
-                <li>
-                    <a href="https://lilyfarm.org/developerResources/baldwin.html">Baldwin project</a>
-                    <p>Resources for unlearning toxic masculinity.</p>
-                </li>
-                <li>
-                    <a href="https://lilyfarm.org/static/lily.html">lilypond</a>
-                    <p>A free game for refugee children.</p>
-                </li>
-            </ul>
-        </section>
+        <h2>Open Source Projects</h2>
+        <ul class="projects">
+            <li>
+                <a href="https://lilyfarm.org/getLocation">lilyfarmd</a> — Access affordable healthy food in your community.
+            </li>
+            <li>
+                <a href="https://lilyfarm.org/developerResources/baldwin.html">Baldwin project</a> — Resources for unlearning toxic masculinity.
+            </li>
+            <li>
+                <a href="https://lilyfarm.org/static/lily.html">lilypond</a> — A free game for refugee children.
+            </li>
+        </ul>
     </div>
 
     <script>
@@ -298,24 +245,10 @@
             const container = document.getElementById(id);
             container.classList.toggle('visible');
         }
-
-        function copyBibtex(id) {
-            const container = document.getElementById(id);
-            const bibtexText = container.textContent.replace('Copy', '').trim();
-            navigator.clipboard.writeText(bibtexText)
-                .then(() => {
-                    const copyButton = container.querySelector('.copy-button');
-                    const originalText = copyButton.textContent;
-                    copyButton.textContent = 'Copied!';
-                    setTimeout(() => {
-                        copyButton.textContent = originalText;
-                    }, 2000);
-                })
-                .catch(err => {
-                    console.error('Failed to copy text: ', err);
-                });
-        }
     </script>
+
+    <!-- buy me a coffee -->
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="lilyfarm" data-description="Support me on Buy me a coffee!" data-message="Support open-access research and free software for working-class people." data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4F6FRWCSL"></script>
