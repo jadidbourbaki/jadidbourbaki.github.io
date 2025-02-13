@@ -71,33 +71,6 @@
             border-radius: 6px;
         }
 
-        .social-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            padding: 0.75rem 1.5rem;
-            background: white;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            justify-content: center;
-        }
-
-        .social-link:hover {
-            background: var(--primary-color);
-            color: white;
-            transform: translateY(-2px);
-        }
-
         .publications {
             list-style: none;
             padding: 0;
@@ -216,9 +189,9 @@
                     <p>Currently a student at <a href="https://www.ccny.cuny.edu">City College of New York</a></p>
                 </div>
 
-                <a href="mailto:hayder.research@gmail.com" class="social-link">📧 Email</a>
-                <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en" class="social-link">📚 Scholar</a>
-                <a href="https://github.com/jadidbourbaki" class="social-link">💻 GitHub</a>
+                <a href="mailto:hayder.research@gmail.com">📧 Email</a>
+                <a href="https://scholar.google.com/citations?user=qgOBcYMAAAAJ&hl=en">📚 Scholar</a>
+                <a href="https://github.com/jadidbourbaki">💻 GitHub</a>
             </header>
         </div>
 
@@ -245,6 +218,18 @@
     primaryClass = {cs.CR},
     url       = {https://arxiv.org/abs/2501.15751}
 }<button class="copy-button" onclick="copyBibtex('bibtex1')">Copy</button></div>
+                </li>
+                <li>
+                    <a href="https://eprint.iacr.org/2025/218" class="paper-title">LSM Trees in Adversarial Environments</a>
+                    <p>Hayder Tirmazi</p>
+                    <button class="bibtex-button" onclick="toggleBibtex('bibtex4')">Show BibTeX</button>
+                    <div id="bibtex4" class="bibtex-container">@misc{cryptoeprint:2025/218,
+      author = {Hayder Tirmazi},
+      title = {{LSM} Trees in Adversarial Environments},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2025/218},
+      year = {2025},
+      url = {https://eprint.iacr.org/2025/218}
+}<button class="copy-button" onclick="copyBibtex('bibtex4')">Copy</button></div>
                 </li>
                 <li>
                     <a href="https://eprint.iacr.org/2025/089" class="paper-title">An Introduction to Protein Cryptography</a>
