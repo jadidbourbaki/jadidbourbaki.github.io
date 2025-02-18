@@ -113,10 +113,13 @@
             font-family: var(--mono-font);
             font-size: 0.9rem;
             background: #f8f8f8;
-            padding: 0rem;
-            margin: 0rem 0;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #eee;
             display: none;
             white-space: pre-wrap;
+            position: relative;
         }
 
         .bibtex-container.visible {
@@ -132,6 +135,37 @@
             padding: 0.2rem 0.5rem;
             cursor: pointer;
             margin-left: 0.5rem;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .bibtex-button:hover {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            font-family: var(--sans-font);
+            font-size: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .copy-button:hover {
+            background: #f0f0f0;
+        }
+
+        .copy-button.copied {
+            background: #4CAF50;
+            color: white;
+            border-color: #45a049;
         }
 
         @media (max-width: 768px) {
@@ -169,7 +203,9 @@
                 <a href="https://eprint.iacr.org/2025/218" class="paper-title">LSM Trees in Adversarial Environments</a>. 
                 Hayder Tirmazi. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex1')">BibTeX</button>
-                <div id="bibtex1" class="bibtex-container">@misc{cryptoeprint:2025/218,
+                <div id="bibtex1" class="bibtex-container">
+                    <button class="copy-button" onclick="copyBibtex('bibtex1')">Copy</button>
+@misc{cryptoeprint:2025/218,
     author = {Hayder Tirmazi},
     title = {{LSM} Trees in Adversarial Environments},
     howpublished = {Cryptology {ePrint} Archive, Paper 2025/218},
@@ -180,7 +216,9 @@
                 <a href="https://arxiv.org/abs/2501.15751" class="paper-title">A Privacy Model for Classical & Learned Bloom Filters</a>.
                 Hayder Tirmazi. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex2')">BibTeX</button>
-                <div id="bibtex2" class="bibtex-container">@misc{tirmazi2025privacymodelclassical,
+                <div id="bibtex2" class="bibtex-container">
+                    <button class="copy-button" onclick="copyBibtex('bibtex2')">Copy</button>
+@misc{tirmazi2025privacymodelclassical,
     title = {A Privacy Model for Classical \& Learned Bloom Filters},
     author = {Hayder Tirmazi},
     year = {2025},
@@ -192,7 +230,9 @@
                 <a href="https://eprint.iacr.org/2025/089" class="paper-title">An Introduction to Protein Cryptography</a>.
                 Hayder Tirmazi, Tien Phuoc Tran. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex3')">BibTeX</button>
-                <div id="bibtex3" class="bibtex-container">@misc{cryptoeprint:2025/089,
+                <div id="bibtex3" class="bibtex-container">
+                    <button class="copy-button" onclick="copyBibtex('bibtex3')">Copy</button>
+@misc{cryptoeprint:2025/089,
     author = {Hayder Tirmazi and Tien Phuoc Tran},
     title = {An Introduction to Protein Cryptography},
     howpublished = {Cryptology {ePrint} Archive, Paper 2025/089},
@@ -203,7 +243,9 @@
                 <a href="https://arxiv.org/abs/2412.15469" class="paper-title">Computational Complexity of Game Boy Games</a>.
                 Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran. 2024.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex4')">BibTeX</button>
-                <div id="bibtex4" class="bibtex-container">@misc{tirmazi2024computationalcomplexitygameboy,
+                <div id="bibtex4" class="bibtex-container">
+                    <button class="copy-button" onclick="copyBibtex('bibtex4')">Copy</button>
+@misc{tirmazi2024computationalcomplexitygameboy,
     title = {Computational Complexity of Game Boy Games},
     author = {Hayder Tirmazi and Ali Tirmazi and Tien Phuoc Tran},
     year = {2024},
@@ -215,7 +257,9 @@
                 <a href="https://arxiv.org/abs/2409.06556" class="paper-title">Adversary Resilient Learned Bloom Filters</a>.
                 Allison Bishop, Hayder Tirmazi. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex5')">BibTeX</button>
-                <div id="bibtex5" class="bibtex-container">@misc{bishop2025adversaryresilientlearnedbloom,
+                <div id="bibtex5" class="bibtex-container">
+                    <button class="copy-button" onclick="copyBibtex('bibtex5')">Copy</button>
+@misc{bishop2025adversaryresilientlearnedbloom,
     title = {Adversary Resilient Learned Bloom Filters},
     author = {Allison Bishop and Hayder Tirmazi},
     year = {2025},
@@ -243,6 +287,20 @@
         function toggleBibtex(id) {
             const container = document.getElementById(id);
             container.classList.toggle('visible');
+        }
+
+        function copyBibtex(id) {
+            const container = document.getElementById(id);
+            const text = container.textContent.trim();
+            navigator.clipboard.writeText(text).then(() => {
+                const button = container.querySelector('.copy-button');
+                button.textContent = 'Copied!';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                    button.classList.remove('copied');
+                }, 2000);
+            });
         }
     </script>
 
