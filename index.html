@@ -204,7 +204,7 @@
                 Hayder Tirmazi. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex1')">BibTeX</button>
                 <div id="bibtex1" class="bibtex-container">
-                    <button class="copy-button" onclick="copyBibtex('bibtex1-content')">Copy</button>
+                    <button class="copy-button" id="bibtex1-button" onclick="copyBibtex('bibtex1')">Copy</button>
                     <div id="bibtex1-content">
 @misc{cryptoeprint:2025/218,
     author = {Hayder Tirmazi},
@@ -220,7 +220,7 @@
                 Hayder Tirmazi. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex2')">BibTeX</button>
                 <div id="bibtex2" class="bibtex-container">
-                    <button class="copy-button" onclick="copyBibtex('bibtex2-content')">Copy</button>
+                    <button class="copy-button" id="bibtex2-button" onclick="copyBibtex('bibtex2')">Copy</button>
                     <div id="bibtex2-content">
 @misc{tirmazi2025privacymodelclassical,
     title = {A Privacy Model for Classical \& Learned Bloom Filters},
@@ -237,7 +237,7 @@
                 Hayder Tirmazi, Tien Phuoc Tran. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex3')">BibTeX</button>
                 <div id="bibtex3" class="bibtex-container">
-                    <button class="copy-button" onclick="copyBibtex('bibtex3-content')">Copy</button>
+                    <button class="copy-button" id="bibtex3-button" onclick="copyBibtex('bibtex3')">Copy</button>
                     <div id="bibtex3-content">
 @misc{cryptoeprint:2025/089,
     author = {Hayder Tirmazi and Tien Phuoc Tran},
@@ -253,7 +253,7 @@
                 Hayder Tirmazi, Ali Tirmazi, Tien Phuoc Tran. 2024.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex4')">BibTeX</button>
                 <div id="bibtex4" class="bibtex-container">
-                    <button class="copy-button" onclick="copyBibtex('bibtex4-content')">Copy</button>
+                    <button class="copy-button" id="bibtex4-button" onclick="copyBibtex('bibtex4')">Copy</button>
                     <div id="bibtex4-content">
 @misc{tirmazi2024computationalcomplexitygameboy,
     title = {Computational Complexity of Game Boy Games},
@@ -270,7 +270,7 @@
                 Allison Bishop, Hayder Tirmazi. 2025.
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex5')">BibTeX</button>
                 <div id="bibtex5" class="bibtex-container">
-                    <button class="copy-button" onclick="copyBibtex('bibtex5-content')">Copy</button>
+                    <button class="copy-button" id="bibtex5-button" onclick="copyBibtex('bibtex5')">Copy</button>
                     <div id="bibtex5-content">
 @misc{bishop2025adversaryresilientlearnedbloom,
     title = {Adversary Resilient Learned Bloom Filters},
@@ -305,10 +305,10 @@
         }
 
         function copyBibtex(id) {
-            const container = document.getElementById(id);
+            const container = document.getElementById(id + "-content");
             const text = container.textContent.trim();
             navigator.clipboard.writeText(text).then(() => {
-                const button = container.querySelector('.copy-button');
+                const button = document.getElementById(id + "-button");
                 button.textContent = 'Copied!';
                 button.classList.add('copied');
                 setTimeout(() => {
