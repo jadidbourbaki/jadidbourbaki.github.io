@@ -106,6 +106,13 @@
 
         .goodnews {
             color: #006400;
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+              }
         }
 
         .bibtex-container {
@@ -235,9 +242,9 @@
             </li>
             <li>
                 <div class="paper-title">A Privacy Model for Classical & Learned Bloom Filters</div> 
+                <div class="goodnews">Accepted to SECRYPT 2025</div>
                 H Tirmazi [<a href="https://arxiv.org/abs/2501.15751">arxiv</a>]
                 <button class="bibtex-button" onclick="toggleBibtex('bibtex2')">BibTeX</button> 
-                <div class="goodnews">Accepted to SECRYPT 2025</div>
                 <div id="bibtex2" class="bibtex-container">
                     <button class="copy-button" id="bibtex2-button" onclick="copyBibtex('bibtex2')">Copy</button>
                     <div id="bibtex2-content">
